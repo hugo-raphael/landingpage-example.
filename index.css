@@ -1,0 +1,231 @@
+:root{
+    --text: #fff;
+    --button: rgb(75, 214, 75);
+    --grey1: #333333;
+    --grey2: #666666;
+    --grey3: #999999;
+}
+
+
+.backgroundHeader{
+    width: 100%;
+    background: linear-gradient(to right, #000080, #8B008B);
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+header{
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+header > h2{
+    color: var(--text);
+}
+
+header > nav{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+header > nav > a {
+    color: var(--text);
+    font-weight: bold;
+}
+
+
+
+.contentHeader{
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentHeader > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contentHeader > div > button{
+    width: 150px;
+}
+
+.contentHeader > figure{
+    height: auto;
+}
+
+.contentHeader > figure > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#section1{
+    width: 100%;
+    background-color:#333333;
+    min-height: 600px;
+} 
+
+#section1 > div {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px
+}
+
+#section1 > div > h2 {
+    font-size: 30px;
+}
+
+#section1 > div > button {
+    width: 200px;
+}
+
+#section1 > div > p {
+    font-weight: bold;
+}
+
+#player{
+    width: 100%;
+}
+
+
+
+#section2{
+    width: 100%;
+    min-height: 600px;
+    background: linear-gradient(to bottom, #888888, #000000);
+}
+
+#section2 > div{
+    text-align: center;
+    padding: 30px;
+}
+
+#section2 > div > h2 {
+    font-size: 25px;
+}
+
+#section2 > div > ul {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#section2 > div > ul > li{
+    min-width: 200px;
+    width: 100%;
+    border: 2px solid #fff;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+
+#section3{
+    width: 100%;
+    min-height: 600px;
+    background-image: url("https://images4.alphacoders.com/998/998869.jpg");
+    background-repeat:no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#section4{
+    width: 100%;
+    min-height: 600px;
+    background-color: var(--grey2);
+}
+
+#section4 > .faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+  
+#section4 > .faq-container > .faq-item {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px white;
+    padding: 20px;
+    border-radius: 20px;
+}
+  
+#section4 > .faq-container > .faq-item > .question {
+    font-size: 18px;
+    font-weight: bold;
+}
+  
+#section4 > .faq-container > .faq-item > .answer {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+#buttoWhatsapp{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgb(98, 230, 98);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    padding: 20px;
+    background-color: #000;
+    text-align: center;
+}
+
+@media(min-width: 720px){
+    header{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #player{
+        width: 500px;
+    }
+
+
+    #section2 > div > ul > li{
+        width: 400px;
+    }
+}
+
+@media(min-width: 1000px){
+    header > nav{
+        flex-direction: row;
+    }
+
+    .contentHeader{
+        flex-direction: row;
+    }
+
+}
+
+
